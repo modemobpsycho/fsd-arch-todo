@@ -1,0 +1,29 @@
+@media (max-width: 599px) {
+  :root {
+    --xs-viewport: 1;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --s-viewport: 1;
+  }
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --m-viewport: 1;
+  }
+}
+
+@media (max-width: 1439px) {
+  :root {
+    --l-viewport: 1;
+  }
+}
+
+@media (max-width: 1919px) {
+  :root {
+    --xl-viewport: 1;
+  }
+}
