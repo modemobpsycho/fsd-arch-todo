@@ -1,19 +1,21 @@
-import { MainLayout } from '@/shared/ui/main-layout';
 import { createBrowserRouter } from 'react-router-dom';
+import { paths } from '@/shared/constants/paths';
+import { MainLayout } from '@/shared/ui/main-layout';
+import { TodoDetailsPage, TodoListPage } from '@/pages';
 
 export const appRouter = () =>
   createBrowserRouter([
     {
-      path: '/',
+      path: paths.ROOT,
       element: <MainLayout />,
       children: [
         {
           index: true,
-          element: <div>Home</div>,
+          element: <TodoListPage />,
         },
         {
-          path: ':id',
-          element: <div>About</div>,
+          path: paths.TODO_DETAILS,
+          element: <TodoDetailsPage />,
         },
       ],
     },

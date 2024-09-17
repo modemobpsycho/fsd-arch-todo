@@ -1,10 +1,3 @@
-// {
-//     "userId": 1,
-//     "id": 2,
-//     "title": "quis ut nam facilis et officia qui",
-//     "completed": false
-// },
-
 export type Todo = {
   userId: number;
   id: number;
@@ -15,3 +8,10 @@ export type Todo = {
 export type QueryParams = {
   completed?: boolean;
 };
+
+// {
+//     "userId": 1,
+//     "id": 2,
+//     "title": "quis ut nam facilis et officia qui",
+//     "completed": false
+// },
