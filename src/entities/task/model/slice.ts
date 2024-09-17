@@ -5,7 +5,6 @@ import { TaskState } from './types';
 const initialState: TaskState = {
   TaskList: [],
   Task: undefined,
-  isLoading: false,
 };
 
 const taskSlice = createSlice({
@@ -17,9 +16,6 @@ const taskSlice = createSlice({
     },
     setTask(state, action: PayloadAction<Todo>) {
       state.Task = action.payload;
-    },
-    setIsLoading(state, action: PayloadAction<boolean>) {
-      state.isLoading = action.payload;
     },
   },
 });

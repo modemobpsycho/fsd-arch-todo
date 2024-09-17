@@ -37,3 +37,11 @@ export const taskApi = httpClient.injectEndpoints({
     }),
   }),
 });
+
+export const {
+  useGetTodosQuery,
+  useGetTodoByIdQuery,
+  useCreateTodoMutation,
+  useUpdateTodoMutation,
+  useDeleteTodoMutation,
+} = taskApi;
