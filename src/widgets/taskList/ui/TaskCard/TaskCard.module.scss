@@ -1,0 +1,28 @@
+@import 'src/shared/colors';
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  min-height: 7.5rem;
+  padding: 2.2rem 2rem;
+  font-size: 1.6rem;
+  background-color: $black-light;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  &__content {
+    display: flex;
+    align-items: center;
+    color: $primary;
+    word-break: break-all;
+
+    &_completed {
+      color: $success;
+      text-decoration: line-through;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 0.8rem;
+  }
+}

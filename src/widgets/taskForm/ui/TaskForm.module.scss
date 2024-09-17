@@ -1,0 +1,18 @@
+@import 'src/shared/colors';
+
+.form {
+  position: relative;
+  display: flex;
+  gap: 1.1rem;
+  justify-content: space-between;
+  padding: 0.8rem 1.6rem;
+  background-color: black;
+
+  &__warning {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    color: $danger;
+    font-size: 1.2rem;
+  }
+}
